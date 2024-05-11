@@ -6,10 +6,10 @@ import { Button } from "./shadcn-ui-components/ui/button";
 function App() {
   return (
     <>
-      <Button className="w-full bg-">My Header</Button>
+      <Button className="w-full bg-orange-800">My Header</Button>
       <TableContainer />
       <CardContainer />
-      <Button className="w-full">My Footer</Button>
+      <Button className="w-full bg-teal-700">My Footer</Button>
     </>
   );
 }
