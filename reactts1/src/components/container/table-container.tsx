@@ -201,7 +201,7 @@ export function TableContainer() {
   });
 
   return (
-    <div className="w-[1000px] float-left  px-4 m-4">
+    <div className="px-4 mx-auto my-20">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter emails..."

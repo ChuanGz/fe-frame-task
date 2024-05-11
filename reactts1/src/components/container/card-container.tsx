@@ -21,7 +21,7 @@ export const CardContainer = () => {
   return (
     <div>
       {" "}
-      <Card className="w-[350px] float-right  px-4 m-4 bg-orange-200">
+      <Card className="w-[350px]  p-10 bg-orange-200 mx-auto my-20">
         <CardHeader>
           <CardTitle>Create new User</CardTitle>
           <CardDescription>create a new user in one-click.</CardDescription>
