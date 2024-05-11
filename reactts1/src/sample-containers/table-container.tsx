@@ -45,13 +45,13 @@ const data: Payment[] = [
   {
     id: "m5gr84i9",
     amount: 316,
-    status: "success",
+    status: "active",
     email: "ken99@yahoo.com",
   },
   {
     id: "3u1reuv4",
     amount: 242,
-    status: "success",
+    status: "active",
     email: "Abe45@gmail.com",
   },
   {
@@ -63,13 +63,13 @@ const data: Payment[] = [
   {
     id: "5kma53ae",
     amount: 874,
-    status: "success",
+    status: "active",
     email: "Silas22@gmail.com",
   },
   {
     id: "bhqecj4p",
     amount: 721,
-    status: "failed",
+    status: "resigned",
     email: "carmella@hotmail.com",
   },
 ];
@@ -77,7 +77,7 @@ const data: Payment[] = [
 export type Payment = {
   id: string;
   amount: number;
-  status: "pending" | "processing" | "success" | "failed";
+  status: "pending" | "processing" | "active" | "resigned";
   email: string;
 };
 
@@ -128,7 +128,7 @@ export const columns: ColumnDef<Payment>[] = [
   },
   {
     accessorKey: "amount",
-    header: () => <div className="text-right">Amount</div>,
+    header: () => <div className="text-right">Current Balance</div>,
     cell: ({ row }) => {
       const amount = parseFloat(row.getValue("amount"));
 

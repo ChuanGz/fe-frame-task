@@ -1,5 +1,6 @@
 import {
   ResizableHandle,
+  ResizablePanel,
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import { TableContainer } from "./table-container";
@@ -11,9 +12,13 @@ export function ResizableContainer() {
       direction="horizontal"
       className="w-full bg-purple-100 border"
     >
-      <TableContainer />
+      <ResizablePanel defaultSize={70}>
+        <TableContainer />
+      </ResizablePanel>
       <ResizableHandle withHandle />
-      <CardContainer />
+      <ResizablePanel defaultSize={30}>
+        <CardContainer />
+      </ResizablePanel>
     </ResizablePanelGroup>
   );
 }
