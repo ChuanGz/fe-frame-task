@@ -1,4 +1,4 @@
-import { Button } from "@/shadcn-ui-components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -6,22 +6,22 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/shadcn-ui-components/ui/card";
-import { Input } from "@/shadcn-ui-components/ui/input";
-import { Label } from "@/shadcn-ui-components/ui/label";
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/shadcn-ui-components/ui/select";
+} from "@/components/ui/select";
 
 export const CardContainer = () => {
   return (
     <div>
       {" "}
-      <Card className="w-[350px] float-right">
+      <Card className="w-[350px] float-right  px-4 m-4">
         <CardHeader>
           <CardTitle>Create new User</CardTitle>
           <CardDescription>create a new user in one-click.</CardDescription>

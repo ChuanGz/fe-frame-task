@@ -19,8 +19,8 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
-import { Button } from "@/shadcn-ui-components/ui/button";
-import { Checkbox } from "@/shadcn-ui-components/ui/checkbox";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -29,9 +29,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/shadcn-ui-components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 
-import { Input } from "@/shadcn-ui-components/ui/input";
+import { Input } from "@/components/ui/input";
 import {
   Table,
   TableBody,
@@ -39,7 +39,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/shadcn-ui-components/ui/table";
+} from "@/components/ui/table";
 
 const data: Payment[] = [
   {
@@ -201,7 +201,7 @@ export function TableContainer() {
   });
 
   return (
-    <div className="w-[1000px] float-left">
+    <div className="w-[1000px] float-left  px-4 m-4">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter emails..."
