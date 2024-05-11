@@ -1,6 +1,6 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
-import { ResizableContainer } from "./sample-containers/resizable-container";
+import { Button } from "./components/specialized/button";
+import { ResizableContainer } from "./components/container/resizable-container";
 
 function App() {
   return (

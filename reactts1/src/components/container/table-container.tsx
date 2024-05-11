@@ -19,8 +19,8 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Button } from "@/components/specialized/button";
+import { Checkbox } from "@/components/specialized/checkbox";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -29,9 +29,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/specialized/dropdown-menu";
 
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/specialized/input";
 import {
   Table,
   TableBody,
@@ -39,7 +39,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "@/components/specialized/table";
 
 const data: Payment[] = [
   {

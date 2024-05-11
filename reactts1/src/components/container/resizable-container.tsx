@@ -2,7 +2,7 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable";
+} from "@/components/specialized/resizable";
 import { TableContainer } from "./table-container";
 import { CardContainer } from "./card-container";
 
