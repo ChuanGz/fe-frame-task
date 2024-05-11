@@ -43,6 +43,36 @@ import {
 
 const data: Payment[] = [
   {
+    id: "5kma53ae",
+    amount: 874,
+    status: "active",
+    email: "Silas22@gmail.com",
+  },
+  {
+    id: "3u1reuv4",
+    amount: 242,
+    status: "active",
+    email: "Abe45@gmail.com",
+  },
+  {
+    id: "m5gr84i9",
+    amount: 316,
+    status: "active",
+    email: "ken99@yahoo.com",
+  },
+  {
+    id: "bhqecj4p",
+    amount: 721,
+    status: "resigned",
+    email: "carmella@hotmail.com",
+  },
+  {
+    id: "derv1ws0",
+    amount: 837,
+    status: "processing",
+    email: "Monserrat44@gmail.com",
+  },
+  {
     id: "m5gr84i9",
     amount: 316,
     status: "active",
@@ -131,6 +161,66 @@ const data: Payment[] = [
     amount: 721,
     status: "resigned",
     email: "carmella@hotmail.com",
+  },
+  {
+    id: "m5gr84i9",
+    amount: 316,
+    status: "active",
+    email: "ken99@yahoo.com",
+  },
+  {
+    id: "3u1reuv4",
+    amount: 242,
+    status: "active",
+    email: "Abe45@gmail.com",
+  },
+  {
+    id: "bhqecj4p",
+    amount: 721,
+    status: "resigned",
+    email: "carmella@hotmail.com",
+  },
+  {
+    id: "derv1ws0",
+    amount: 837,
+    status: "processing",
+    email: "Monserrat44@gmail.com",
+  },
+  {
+    id: "m5gr84i9",
+    amount: 316,
+    status: "active",
+    email: "ken99@yahoo.com",
+  },
+  {
+    id: "derv1ws0",
+    amount: 837,
+    status: "processing",
+    email: "Monserrat44@gmail.com",
+  },
+  {
+    id: "5kma53ae",
+    amount: 874,
+    status: "active",
+    email: "Silas22@gmail.com",
+  },
+  {
+    id: "bhqecj4p",
+    amount: 721,
+    status: "resigned",
+    email: "carmella@hotmail.com",
+  },
+  {
+    id: "3u1reuv4",
+    amount: 242,
+    status: "active",
+    email: "Abe45@gmail.com",
+  },
+  {
+    id: "5kma53ae",
+    amount: 874,
+    status: "active",
+    email: "Silas22@gmail.com",
   },
 ];
 
@@ -261,8 +351,8 @@ export function TableContainer() {
   });
 
   return (
-    <div className="px-4 mx-auto my-20">
-      <div className="flex items-center py-4">
+    <div className="p-10 mx-auto m-10">
+      <div className="flex items-center">
         <Input
           placeholder="Filter emails..."
           value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
